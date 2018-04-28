@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_notification1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/tv1_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="you have to do Service at ISM Dhanabd"
+        android:textColor="#f00"
+        android:textSize="15dp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/tv2_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:textColor="#f00"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="50dp"/>
+
+</LinearLayout>

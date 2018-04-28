@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OOTS3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="account">Account</string>
+    <string name="money">money</string>
+    <string name="performance">Performance</string>
+    <string name="more">more</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="myprofile">My Profile</string>
+    <string name="refill">Refill</string>
+    <string name="yourservice">Your Service</string>
+    <string name="notification">Notification</string>
+    <string name="logout">Logout</string>
+    <string name="earning">Earning</string>
+    <string name="Unpaid">Unpaid Records</string>
+    <string name="terms"><![CDATA[Terms & Conditions]]></string>
+    <string name="contact">Contact Us</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+</resources>

@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nnk.com.oots3.Performance_Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="PAGE 3\n Performance Information"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#f000"
+        android:fontFamily="casual"
+        android:gravity="center"/>
+</FrameLayout>
