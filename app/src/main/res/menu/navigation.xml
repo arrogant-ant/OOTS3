@@ -5,18 +5,19 @@
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_account_circle_black_24dp"
-        android:title="@string/account" />
+        android:title="@string/account"
+        />
 
     <item
-        android:id="@+id/navigation_money"
+        android:id="@+id/navigation_transaction"
         android:icon="@drawable/ic_attach_money_black_24dp"
-        android:title="@string/money" />
+        android:title="@string/transactions" />
 
-    <item
+   <!-- <item
         android:id="@+id/navigation_performance"
         android:icon="@drawable/ic_assignment_black_24dp"
         android:title="@string/performance"
-         />
+         />-->
 
     <item
         android:id="@+id/navigation_more"

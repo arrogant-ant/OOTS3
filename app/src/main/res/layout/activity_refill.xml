@@ -1,68 +1,34 @@
-<LinearLayout android:id="@+id/ll1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ll_image"
-        android:orientation="horizontal">
-        <ImageView
-            android:id="@+id/iv_logo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            />
-        <ImageView
-            android:id="@+id/iv1_refill"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginLeft="30dp"/>
-
-
-
-    </LinearLayout>
+    <!-- toolbar -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_provider" />
 
     <TextView
-        android:id="@+id/tv1_refill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Romesh Mani Lall"
-        android:textColor="#f00"
-        android:textSize="20dp" />
-
-    <TextView
-        android:id="@+id/tv2_refill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ID:123344"
-        android:textColor="#f00"
-        android:textSize="15dp" />
-
-    <RatingBar
-        android:id="@+id/rb1_refill"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/tv3_refill"
-        android:textColor="#f00"
-        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="-----------Service Refill------------"
         android:textAlignment="center"
+        android:textColor="#f00"
+        android:textSize="18dp"
         android:textStyle="bold"
 
         />
+
     <LinearLayout
         android:id="@+id/ll4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tv4_refill"
@@ -85,13 +51,14 @@
             android:textAlignment="center"
             android:visibility="visible"></Spinner>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/ll5_refill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tv5_refill"
@@ -104,6 +71,7 @@
             android:textColor="#f00"
             android:textSize="25dp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv6_refill"
             android:layout_width="wrap_content"
@@ -118,13 +86,14 @@
 
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/ll6_refill"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp">
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tv7_refill"
@@ -148,21 +117,22 @@
             android:textSize="25dp"
             android:textStyle="bold" />
     </LinearLayout>
+
     <EditText
+        android:id="@+id/et1_Refill"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:id="@+id/et1_Refill"
+        android:layout_margin="10dp"
         android:text="Payment Descriptions:"
-        android:textSize="15dp"
-        android:layout_margin="10dp"/>
+        android:textSize="15dp" />
+
     <Button
+        android:id="@+id/b1_Refill"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/b1_Refill"
-        android:text="Pay"
         android:background="#51fc3a"
-        android:textStyle="bold"
-        />
+        android:text="Pay"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

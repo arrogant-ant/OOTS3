@@ -11,7 +11,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
@@ -34,12 +33,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 case R.id.navigation_profile:
                   transaction.replace(R.id.content,new Profile_Fragment()).commit();
                     return true;
-                case R.id.navigation_money:
-                    transaction.replace(R.id.content,new Money_Fragment()).commit();
+                case R.id.navigation_transaction:
+                    transaction.replace(R.id.content,new Transaction_Fragment()).commit();
                     return true;
-                case R.id.navigation_performance:
-                   transaction.replace(R.id.content,new Performance_Fragment()).commit();
-                    return true;
+
                 case R.id.navigation_more:
                   transaction.replace(R.id.content,new More_Fragment()).commit();
                     return true;
@@ -58,8 +55,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle=new ActionBarDrawerToggle(MainActivity.this,dl,R.string.open,R.string.close);
         dl.addDrawerListener(toggle);
         toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

@@ -6,51 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/build"
     tools:context="nnk.com.oots3.MainActivity">
+
     <LinearLayout
+        android:id="@+id/ll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/ll"
 
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <FrameLayout
-        android:id="@+id/content"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
 
-    </FrameLayout>
+        </FrameLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/colorPrimaryDark"
-        app:menu="@menu/navigation"
-        tools:background="@color/colorPrimaryDark" />
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            app:itemTextColor="@android:color/darker_gray"
+            app:menu="@menu/navigation"
+            tools:background="@color/colorPrimaryDark" />
     </LinearLayout>
 
 
-
     <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/header"
+        android:id="@+id/nav_side"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/nav_side"
-        app:menu="@menu/nav_menu"
-        android:background="#fffafa"
-        app:itemTextColor="#94928e"
-        app:itemIconTint="#94928e"
         android:layout_gravity="start"
-        >
-
-
+        android:background="#fffafa"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="#94928e"
+        app:itemTextColor="#94928e"
+        app:menu="@menu/nav_menu">
 
 
     </android.support.design.widget.NavigationView>
